@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import HomePage from './pages/HomePage';
 import Research from './pages/Research';
 import Ressources from './pages/Ressources';
@@ -17,17 +17,17 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <SideBar/>
-      {/* <Router>
+      {/* <SideBar/> */}
+      <Router>
         <div className='content'>
           <NavBar />
-          <Routes>
+          {/* <Routes>
             <Route path="/homepage" element={<HomePage />} />
             <Route path="/research" element={<Research />} />
             <Route path="/ressources" element={<Ressources/>} />
-        </Routes>
+        </Routes> */}
     </div>
-    </Router > */}
+    </Router >
     </div >
   );
 }
