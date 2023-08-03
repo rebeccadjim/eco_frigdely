@@ -175,18 +175,27 @@
 }
 
 .logout-icon{
+    width: 40px;
+    padding: 0 10px;
+    margin: auto 2px;
+    margin-bottom: 2px;
+    border-radius: 30px;
+}
+
+
+.logout-icon-NX{
     width: 60px;
     padding: 0 10px;
     margin: auto 2px;
     margin-bottom: 2px;
-    border-radius: 90px;
+    border-radius: 60px;
 }
 
-.logout-icon:hover{
+.logout-icon:hover, .logout-icon-NX:hover{
     background-color: rgb(70, 102, 93);
 }
 
-.logout-icon:hover > .logout-word{
+/* .logout-icon:hover > .logout-word{
     display: block;
 }
 .logout-word{
@@ -202,4 +211,4 @@
     white-space:nowrap;
     border: 1px solid rgb(255, 255, 255) ;
     background-color: rgb(21, 43, 46);
-}
+} */

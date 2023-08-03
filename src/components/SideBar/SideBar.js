@@ -19,7 +19,7 @@ const SideBar = () => {
             icon: userImage,
         },
         {
-            text: "Orders",
+            text: "Your cart",
             icon: ordersImage,
         },
         {
@@ -79,9 +79,11 @@ const SideBar = () => {
                         <p className="nav-footer-user-name">Rebecca Djimtoingar</p>
                         <p className="nav-footer-user-building">Batiment E</p>
                     </div>
+                    <img className="logout-icon" src={logoutImage} alt="" srcSet="" />
                 </div>}
-                <img className="logout-icon" src={logoutImage} alt="" srcSet=""/>
-                {!isExpended && <div className="logout-word">logout</div>}
+                {!isExpended &&
+                    <img className="logout-icon-NX" src={logoutImage} alt="" srcSet="" />
+                }
             </div>
         </div>
     );
