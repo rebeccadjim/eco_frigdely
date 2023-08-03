@@ -1,34 +1,42 @@
 import React, { useState } from "react";
 import "./SideBar.css";
 import SideBarLogo from './icons/Logo.svg';
+import userImage from "./icons/user.svg";
+import ordersImage from "./icons/orders.svg";
+import messageImage from "./icons/message.svg";
+import ressourcesImage from "./icons/ressources.svg";
+import walletImage from "./icons/wallet.svg";
+import aboutUsImage from "./icons/aboutUs.svg";
+import userPhoto from "./icons/user.svg";
+import logoutImage from "./icons/logout.svg";
 import { Class } from "coffeescript/lib/coffeescript/nodes";
 
 const SideBar = () => {
     const [isExpended, setExpendState] = useState(false)
     const menuItems = [
         {
-            text:"User",
-            icon:"./icons/user.svg",
+            text: "User",
+            icon: userImage,
         },
         {
-            text:"Orders",
-            icon:"icons/orders.svg",
+            text: "Orders",
+            icon: ordersImage,
         },
         {
-            text:"Messages",
-            icon:"icons/message.svg",
+            text: "Messages",
+            icon: messageImage,
         },
         {
-            text:"Your fridge",
-            icon:"icons/ressources.svg",
+            text: "Your fridge",
+            icon: ressourcesImage,
         },
         {
-            text:"Your balance",
-            icon:"icons/wallet.svg",
+            text: "Your balance",
+            icon: walletImage,
         },
         {
-            text:"About us",
-            icon:"icons/aboutUs.svg",
+            text: "About us",
+            icon: aboutUsImage,
         },
 
     ]
@@ -54,13 +62,26 @@ const SideBar = () => {
                         <span></span>
                     </button>
                 </div>
-                <div className="nav-menus">{menuItems.map(({text,icon})=>
-                <a href = "#" className="menu-item" >
-                    <img src={icon} alt="" srcSet=""/>
-                    <p>{text}</p>
-                </a>
-                )} 
+                <div className="nav-menus">
+                    {menuItems.map(({ text, icon }) => (
+                        <a href="#" className={isExpended ? "menu-item" : "menu-item menu-item-NX"} >
+                            <img src={icon} alt="" srcSet="" />
+                            {isExpended && <p>{text}</p>}
+                            {!isExpended && <div className="tooltip">{text}</div>}
+                        </a>
+                    ))}
                 </div>
+            </div>
+            <div className="nav-footer">
+                {isExpended && <div className="nav-details">
+                    <img src={userPhoto} alt="" srcSet="" />
+                    <div className="nav-footer-user-infos">
+                        <p className="nav-footer-user-name">Rebecca Djimtoingar</p>
+                        <p className="nav-footer-user-building">Batiment E</p>
+                    </div>
+                </div>}
+                <img className="logout-icon" src={logoutImage} alt="" srcSet=""/>
+                {!isExpended && <div className="logout-word">logout</div>}
             </div>
         </div>
     );

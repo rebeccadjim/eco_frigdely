@@ -12,7 +12,7 @@
     width: 85px;
 }
 .nav-upper,
-.nav-heading {
+.nav-heading, nav-menus, menu-item, .nav-footer{
     display: grid;
 }
 
@@ -31,6 +31,8 @@
     width: 40px;
     padding: 0 10px ;
 }
+
+
 
 .menu{
     position: absolute;
@@ -90,4 +92,114 @@
 .menu-out:hover span:nth-child(3){
     width: 25px;
     transform: translate(0px,-8px) rotate(30deg);
+}
+
+.nav-menu{
+    grid-template-rows: repeat(7, 1fr);
+    margin-top: 20px;
+}
+
+.menu-item{
+    height: 57px;
+    width:15em;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.menu-item-NX{
+    margin: auto 5px;
+    width:  4.5em;
+}
+
+.menu-item:hover{
+    background-color: rgb(70, 102, 93);
+}
+
+.menu-item img{
+    width: 60px;
+    padding: 0 10px;
+    object-position: left;
+}
+
+.menu-item:hover > .tooltip {
+    display:block;
+}
+.tooltip{
+    display: none;
+    position: absolute;
+    left: 99%;
+    bottom: 80%;
+
+    width: auto;
+    padding: 3px 20px;
+
+    border-radius: 15px;
+    white-space:nowrap;
+    border: 1px solid rgb(255, 255, 255) ;
+    background-color: rgb(21, 43, 46);
+}
+
+.nav-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(21, 43, 46);
+}
+
+.nav-details{
+    display: flex;
+}
+.nav-details img{
+    width: 60px;
+    padding: 0 20px ;
+}
+
+.nav-footer-user-name{
+    font-size: 15px;
+    font-weight: 200;
+    white-space: nowrap;
+    text-align: left;
+
+}
+
+.nav-footer-user-building{
+    margin-top: -15px;
+    color: gray;
+    text-align: left;
+}
+
+.logout-icon{
+    width: 60px;
+    padding: 0 10px;
+    margin: auto 2px;
+    margin-bottom: 2px;
+    border-radius: 90px;
+}
+
+.logout-icon:hover{
+    background-color: rgb(70, 102, 93);
+}
+
+.logout-icon:hover > .logout-word{
+    display: block;
+}
+.logout-word{
+    display: none;
+    position: absolute;
+    left: 99%;
+    bottom: 80%;
+
+    width: auto;
+    padding: 3px 20px;
+
+    border-radius: 15px;
+    white-space:nowrap;
+    border: 1px solid rgb(255, 255, 255) ;
+    background-color: rgb(21, 43, 46);
 }

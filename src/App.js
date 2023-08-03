@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <SideBar/>
-      <Router>
+      {/* <Router>
         <div className='content'>
           <NavBar />
           <Routes>
@@ -27,7 +27,7 @@ function App() {
             <Route path="/ressources" element={<Ressources/>} />
         </Routes>
     </div>
-    </Router >
+    </Router > */}
     </div >
   );
 }
