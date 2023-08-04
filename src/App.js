@@ -17,10 +17,10 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      {/* <SideBar/> */}
+      <NavBar/> 
+      <SideBar/>
       <Router>
         <div className='content'>
-          <NavBar />
           {/* <Routes>
             <Route path="/homepage" element={<HomePage />} />
             <Route path="/research" element={<Research />} />
