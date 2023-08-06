@@ -13,15 +13,15 @@ const NavBar = () => {
     return (
         <div className='banner-container'>
             <nav>
-                <div className='banner-content'>
-                    <div className='home-item'>
+                <div className={isVisible ? 'banner-content':'banner-content banner-content-NX'}>
+                    <div className={isVisible ? 'home-item':'home-item home-item-NX'}>
                         <a href='#' className='home-items'>
                             <img src={homeImage} alt='' srcSet=''></img>
                             {isVisible && <h2 className='home-word'>Home</h2>}
                         </a>
 
                     </div>
-                    <div className='search-bar-container'>
+                    <div className={isVisible ? 'search-bar-container':'search-bar-container search-bar-container-NX'}>
                         <div className='search-bar'>
                             <input className="search-bar-content" type='text' placeholder='What do you need in your fridge ?'>
                             </input>
@@ -29,7 +29,7 @@ const NavBar = () => {
                         <img className='loop-icon' src={loopImage} alt='' srcSet=''></img>
                     </div>
                     <button className={isVisible ?
-                        "nav-bar-visible nav-bar-visible-in " : "nav-bar-visible nav-bar-visible-in"}
+                        "nav-bar-visible nav-bar-visible-in " : "nav-bar-visible nav-bar-visible-out"}
 
                         onClick={() => setVisible(!isVisible)}>
                         <span></span>
@@ -37,10 +37,10 @@ const NavBar = () => {
                         <span></span>
                     </button>
                     
-                    <div className='map-item'>
+                    <div className={isVisible ? 'map-item':'map-item map-item-NX'}>
                         <a href='#' className='map-items'>
                             <img src={mapLogo} alt='' srcSet=''></img>
-                            {isVisible && <h2 className='home-word'>Map</h2>}
+                            {isVisible && <h2 className='map-word'>Map</h2>}
                         </a>
                     </div>
                 </div>
