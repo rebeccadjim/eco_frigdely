@@ -1,6 +1,6 @@
 .side-nav-container{
     background-color: rgb(21, 43, 46);
-    width : 300px;
+    width : 250px;
     height : 519px;
     position : relative; 
     color: white;
@@ -62,6 +62,9 @@
     transition: 0.4s;
 }
 
+.menu-in{
+    margin-right: -60px;
+}
 .menu:hover span{
     margin: auto;
 }

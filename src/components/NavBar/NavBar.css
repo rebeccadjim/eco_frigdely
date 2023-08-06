@@ -102,7 +102,7 @@ a{
 .map-item{
     position: absolute;
     top: 15px;
-    left: 90%;
+    left: 87%;
 }
 
 .map-item-NX{
@@ -125,7 +125,7 @@ a{
 
 .nav-bar-visible{
     position: absolute;
-    right: 15%;
+    right: 17%;
     top: 13%;
 
     background: none;
@@ -159,12 +159,12 @@ a{
 
 .nav-bar-visible-out{
     position: absolute;
-    right: 15%;
+    right: 17%;
     top: 5%;
 }
 .nav-bar-visible-in:hover span:nth-child(1){
-    width: 25px;
-    transform: translate(-8px,3px) rotate(-60deg);
+    width: 20px;
+    transform: translate(-6px,0px) rotate(-45deg);
 }
 
 .nav-bar-visible-in:hover span:nth-child(2){
@@ -172,13 +172,13 @@ a{
 }
 
 .nav-bar-visible-in:hover span:nth-child(3){
-    width: 25px;
-    transform: translate(8px,3px) rotate(60deg);
+    width: 20px;
+    transform: translate(6px,-3px) rotate(45deg);
 }
 
 .nav-bar-visible-out:hover span:nth-child(1){
-    width: 25px;
-    transform: translate(-8px,0px) rotate(45deg);
+    width: 20px;
+    transform: translate(-6px,7px) rotate(45deg);
 }
 
 .nav-bar-visible-out:hover span:nth-child(2){
@@ -186,6 +186,6 @@ a{
 }
 
 .nav-bar-visible-out:hover span:nth-child(3){
-    width: 25px;
-    transform: translate(8px,0px) rotate(-45deg);
+    width: 20px;
+    transform: translate(6px,4px) rotate(-45deg);
 }
