@@ -15,7 +15,7 @@ const NavBar = () => {
             <nav>
                 <div className={isVisible ? 'banner-content':'banner-content banner-content-NX'}>
                     <div className={isVisible ? 'home-item':'home-item home-item-NX'}>
-                        <a href='#' className='home-items'>
+                        <a href='/homepage' className='home-items'>
                             <img src={homeImage} alt='' srcSet=''></img>
                             {isVisible && <h2 className='home-word'>Home</h2>}
                         </a>
@@ -38,7 +38,7 @@ const NavBar = () => {
                     </button>
                     
                     <div className={isVisible ? 'map-item':'map-item map-item-NX'}>
-                        <a href='#' className='map-items'>
+                        <a href='/map' className='map-items'>
                             <img src={mapLogo} alt='' srcSet=''></img>
                             {isVisible && <h2 className='map-word'>Map</h2>}
                         </a>

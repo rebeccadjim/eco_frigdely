@@ -8,7 +8,7 @@ import Messages from './pages/Messages';
 import Map from './pages/Map';
 import Wallet from './pages/Wallet';
 import AboutUs from './pages/AboutUs';
-import Orders from './pages/Orders';
+import Orders from './pages/Cart';
 import SideBar from './components/SideBar/SideBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -21,11 +21,11 @@ function App() {
       <SideBar/>
       <Router>
         <div className='content'>
-          {/* <Routes>
+          <Routes>
             <Route path="/homepage" element={<HomePage />} />
-            <Route path="/research" element={<Research />} />
-            <Route path="/ressources" element={<Ressources/>} />
-        </Routes> */}
+            {/* <Route path="/research" element={<Research />} />*/}
+            <Route path="/ressources" element={<Ressources/>}/>
+        </Routes>
     </div>
     </Router >
     </div >

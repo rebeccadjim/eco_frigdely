@@ -10,6 +10,7 @@ import aboutUsImage from "./icons/aboutUs.svg";
 import userPhoto from "./icons/user.svg";
 import logoutImage from "./icons/logout.svg";
 import { Class } from "coffeescript/lib/coffeescript/nodes";
+import { link } from "react-router-dom";
 
 const SideBar = () => {
     const [isExpended, setExpendState] = useState(false)
@@ -17,26 +18,32 @@ const SideBar = () => {
         {
             text: "User",
             icon: userImage,
+            linking: "user",
         },
         {
             text: "Your cart",
             icon: ordersImage,
+            linking: "cart",
         },
         {
             text: "Messages",
             icon: messageImage,
+            linking: "messages",
         },
         {
             text: "Your fridge",
             icon: ressourcesImage,
+            linking: "fridge",
         },
         {
             text: "Your balance",
             icon: walletImage,
+            linking: "wallet",
         },
         {
             text: "About us",
             icon: aboutUsImage,
+            linking: "aboutus",
         },
 
     ]
@@ -63,8 +70,8 @@ const SideBar = () => {
                     </button>
                 </div>
                 <div className="nav-menus">
-                    {menuItems.map(({ text, icon }) => (
-                        <a href="#" className={isExpended ? "menu-item" : "menu-item menu-item-NX"} >
+                    {menuItems.map(({ text, icon, linking }) => (
+                        <a href={"/"+ linking} className={isExpended ? "menu-item" : "menu-item menu-item-NX"} >
                             <img src={icon} alt="" srcSet="" />
                             {isExpended && <p>{text}</p>}
                             {!isExpended && <div className="tooltip">{text}</div>}
