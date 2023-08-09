@@ -5,22 +5,31 @@
    left: 100px;
    top: 70px;
 }
-
+.user-page-deco{
+    position: relative;
+    height: 50px;
+}
 .user-profile{
     position: absolute;
     font-size: larger;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    left: 20%;
-    top: 50px;
     opacity: 30%;
+    bottom: 500px;
+    left: 120px;
 }
-
+.trait{
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    opacity: 30%;
+    bottom: 520px;
+}
 .profile{
     position: absolute;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(223, 255, 254);
     width: 210px;
     height: 300px;
-    top: 150px;
+    top: 120px;
     left: 120px;
     box-shadow: 5px 5px 3px lightgray;
 }
@@ -33,14 +42,7 @@
     box-shadow: 10px 3px 6px lightgray;
 }
 
-.trait{
-    position: absolute;
-    top: 73px;
-    left: 40%;
-    width: 60%;
-    opacity: 30%;
-    bottom: 20px;
-}
+
 
 .name-under-pic{
     text-align: center;
@@ -50,27 +52,28 @@
 }
 
 .personal-infos{
-    position: absolute;
-    background-color: rgb(245, 245, 245);
-    width: 500px;
+    position: relative;
+    background-color: rgb(223, 255, 254);
+    width: 550px;
     height: 300px;
-    top: 150px;
+    bottom: 500px;
     left: 400px;
     box-shadow: 5px 5px 3px lightgray;
 }
 
 .personal-infos-word{
-    text-align: left;
-    margin-left: 10px;
+    position: relative;
+    text-align: center;
     opacity: 30%;
+    top: 15px;
 }
 
 .left-info{
     position: relative;
     font-size: 15px;
     text-align: left;
-    left: 10px;
-    top: 10px;
+    left: 30px;
+    top: 20px;
     opacity: 40%;
 }
 
@@ -78,7 +81,27 @@
     position: relative;
     font-size: 15px;
     text-align: left;
-    left: 200px;
-    bottom: 200px;
+    left: 230px;
+    bottom: 190px;
     opacity: 40%;
+}
+
+.user-data-container{
+    position: relative;
+    background-color: rgb(223, 255, 254);
+    width: 1100px;
+    height: 100px;
+    box-shadow: 5px 5px 3px lightgray;
+    bottom: 470px;
+    left: 120px;
+}
+
+.notifications-container{
+    position: relative;
+    background-color: rgb(223, 255, 254);
+    width: 210px;
+    height: 300px;
+    margin-top: 10;
+    margin-left: 10px;
+    box-shadow: 5px 5px 3px lightgray;
 }

@@ -10,8 +10,10 @@ function User() {
     const userInfo = userFile.find((userInfo) => userInfo.name === name)
     return (
         <div className="user-page-container">
-            <p className="user-profile">User profile</p>
-            <div className="trait"><hr /></div>
+            <div className="user-page-deco">
+                <p className="user-profile">User profile</p>
+                <div className="trait"><hr /></div>
+            </div>
             <div className="user-info-container">
                 <div className="profile">
                     <img className="profile-pic" src={userInfo.picture} alt=""></img>
@@ -40,6 +42,14 @@ function User() {
                     </div>
                 </div>
             </div>
+            <div className="user-data-container">
+                <p className="infos-bottom">Current balance</p>
+                <p className="infos-bottom">Orders</p>
+                <p className="infos-bottom">Friends</p>
+                <p className="infos-bottom">Money saved</p>
+                <p className="infos-bottom">Energy saved</p>
+            </div>
+            <div className="notifications-container"></div>
         </div>
     );
 }
