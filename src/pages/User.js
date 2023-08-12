@@ -3,11 +3,54 @@ import { link } from "react-router-dom";
 import '../styles/User.css';
 import { userFile } from '../data/userFile';
 import { useParams } from "react-router-dom";
+import friends from './icons/friends.svg';
+import planet from './icons/planet.svg';
+import balance from './icons/wallet_bottom.svg';
+import fridge from './icons/ressources.svg';
+import cart from './icons/orders.svg';
 
 
 function User() {
     const { name } = useParams();
-    const userInfo = userFile.find((userInfo) => userInfo.name === name)
+    const userInfo = userFile.find((userInfo) => userInfo.name === name);
+    const bottomItems = [
+        {
+            text: "Current balance",
+            icon: balance,
+            value: userInfo.current_balance,
+            unit: "€",
+            linking: "wallet",
+        },
+        {
+            text: "Energy saved",
+            icon: planet,
+            value: userInfo.energy_saved,
+            unit: "kWh",
+            linking: "",
+        },
+        {
+            text: "Aliments in fridge",
+            icon: fridge,
+            value: userInfo.aliments_in_fridge,
+            unit: "",
+            linking: "ressources",
+        },
+        {
+            text: "Orders",
+            icon: cart,
+            value: userInfo.number_of_orders,
+            unit: "",
+            linking: "cart",
+        },
+        {
+            text: "Friends",
+            icon: friends,
+            value: userInfo.friends,
+            unit: "",
+            linking: "messages",
+        }
+    ]
+
     return (
         <div className="user-page-container">
             <div className="user-page-deco">
@@ -43,13 +86,16 @@ function User() {
                 </div>
             </div>
             <div className="user-data-container">
-                <p className="infos-bottom">Current balance</p>
-                <p className="infos-bottom">Orders</p>
-                <p className="infos-bottom">Friends</p>
-                <p className="infos-bottom">Money saved</p>
-                <p className="infos-bottom">Energy saved</p>
+                {bottomItems.map(({ text, icon, value, unit, linking }) => (
+                    <a href={"/" + linking} className="infos-bottom" >
+                        <img className="bottom-images" src={icon} alt="" srcSet="" />
+                        <p className="values">{value + unit}</p>
+                        <p>{text}</p>
+                    </a>))}
             </div>
-            <div className="notifications-container"></div>
+            <div className="notifications-container">
+                <p className="notifications-word">Notifications</p>
+            </div>
         </div>
     );
 }

@@ -1,36 +1,38 @@
 .user-page-container{
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(240, 240, 240);
    /* max-width: 1250px; */
-   /* position: absolute; */
-   left: 100px;
-   top: 70px;
+   position: relative;
+   padding: auto;
 }
 .user-page-deco{
+    width: 100%;
     position: relative;
     height: 50px;
 }
 .user-profile{
-    position: absolute;
+    position: relative;
     font-size: larger;
+    opacity: 30%;
+    right: 40%;
+    top: 15px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    opacity: 30%;
-    bottom: 500px;
-    left: 120px;
 }
+
 .trait{
-    position: absolute;
-    left: 40%;
-    width: 60%;
+    position: relative;
+    width: 80%;
+    left: 20%;
+    top: -15px;
     opacity: 30%;
-    bottom: 520px;
 }
+
 .profile{
     position: absolute;
-    background-color: rgb(223, 255, 254);
+    background-color: rgb(255, 255, 255);
     width: 210px;
     height: 300px;
-    top: 120px;
-    left: 120px;
+    top: 70px;
+    left: 80px;
     box-shadow: 5px 5px 3px lightgray;
 }
 
@@ -42,8 +44,6 @@
     box-shadow: 10px 3px 6px lightgray;
 }
 
-
-
 .name-under-pic{
     text-align: center;
     opacity: 50%;
@@ -53,11 +53,11 @@
 
 .personal-infos{
     position: relative;
-    background-color: rgb(223, 255, 254);
+    background-color: rgb(255, 255, 255);
     width: 550px;
     height: 300px;
-    bottom: 500px;
-    left: 400px;
+    top: 20px;
+    left: 355px;
     box-shadow: 5px 5px 3px lightgray;
 }
 
@@ -88,20 +88,44 @@
 
 .user-data-container{
     position: relative;
-    background-color: rgb(223, 255, 254);
+    display: flex;
+    background-color: rgb(255, 255, 255);
     width: 1100px;
     height: 100px;
     box-shadow: 5px 5px 3px lightgray;
-    bottom: 470px;
-    left: 120px;
+    bottom: -50px;
+    left: 80px;
 }
 
+.infos-bottom{
+    padding: 0;
+    margin: -5px 60px;
+    opacity: 100%;
+}
+
+.bottom-images{
+    padding: 0;
+    width: 60px;
+}
+
+.values{
+    font-size: 30px;
+    margin-bottom: -20px;
+    margin-top: -25px;
+}
 .notifications-container{
     position: relative;
-    background-color: rgb(223, 255, 254);
+    background-color: rgb(255, 255, 255);
     width: 210px;
     height: 300px;
-    margin-top: 10;
-    margin-left: 10px;
+    left: 970px;
+    bottom: 395px;
     box-shadow: 5px 5px 3px lightgray;
+}
+
+.notifications-word{
+    position: relative;
+    text-align: center;
+    top: 15px;
+    opacity: 30%;
 }

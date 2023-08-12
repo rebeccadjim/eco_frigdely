@@ -12,6 +12,12 @@ export const userFile = [
         picture: profilePic,
         email: "rebecca.djimtoingar-taroum@insa-lyon.fr",
         phoneNumber: "06 09 17 75 65",
-        address: "20 Avenue Albert Einstein"
+        address: "20 Avenue Albert Einstein",
+
+        friends: 10,
+        number_of_orders: 20,
+        energy_saved: 3,
+        current_balance: 30,
+        aliments_in_fridge: 5
     }
 ]
