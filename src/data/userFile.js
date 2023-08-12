@@ -1,4 +1,4 @@
-import profilePic from './IMG_20220702_130823.jpg'
+import profilePic from './profile_picture.jpg'
 
 export const userFile = [
     {
