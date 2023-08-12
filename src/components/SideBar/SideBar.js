@@ -71,7 +71,7 @@ const SideBar = () => {
                 </div>
                 <div className="nav-menus">
                     {menuItems.map(({ text, icon, linking }) => (
-                        <a href={"/"+ linking} className={isExpended ? "menu-item" : "menu-item menu-item-NX"} >
+                        <a href={"/" + linking} className={isExpended ? "menu-item" : "menu-item menu-item-NX"} >
                             <img src={icon} alt="" srcSet="" />
                             {isExpended && <p>{text}</p>}
                             {!isExpended && <div className="tooltip">{text}</div>}
@@ -82,10 +82,13 @@ const SideBar = () => {
             <div className="nav-footer">
                 {isExpended && <div className="nav-details">
                     <img src={userPhoto} alt="" srcSet="" />
-                    <div className="nav-footer-user-infos">
+                    <a href="user">
                         <p className="nav-footer-user-name">Rebecca Djimtoingar</p>
                         <p className="nav-footer-user-building">Batiment E</p>
-                    </div>
+                    </a>
+                    {/* <a href="map"> */}
+                        {/* <p className="nav-footer-user-building">Batiment E</p> */}
+                    {/* </a> */}
                     <img className="logout-icon" src={logoutImage} alt="" srcSet="" />
                 </div>}
                 {!isExpended &&
