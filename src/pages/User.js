@@ -33,7 +33,7 @@ function User() {
             icon: fridge,
             value: userInfo.aliments_in_fridge,
             unit: "",
-            linking: "ressources",
+            linking: "fridge",
         },
         {
             text: "Orders",

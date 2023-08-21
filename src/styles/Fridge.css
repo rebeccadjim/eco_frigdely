@@ -1,0 +1,50 @@
+.fridge-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fridge-page-deco {
+    width: 100%;
+    position: relative;
+    height: 50px;
+}
+
+.your-fridge {
+    position: relative;
+    font-size: larger;
+    opacity: 30%;
+    right: 40%;
+    top: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.trait {
+    position: relative;
+    width: 80%;
+    left: 20%;
+    top: -15px;
+    opacity: 30%;
+}
+
+.aliment-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.aliment {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px lightgray;
+}
+
+.aliment-text{
+    opacity: 50%;
+}
+.aliment-image {
+    width: 40%;
+    height: 40%;
+}

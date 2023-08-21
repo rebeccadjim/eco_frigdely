@@ -1,6 +1,7 @@
 .user-page-container{
    background-color: rgb(240, 240, 240);
-   /* max-width: 1250px; */
+   max-width: 1250px;
+   max-height: 550px;
    position: relative;
    padding: auto;
 }
@@ -28,11 +29,11 @@
 
 .profile{
     position: absolute;
-    background-color: rgb(255, 255, 255);
     width: 210px;
     height: 300px;
     top: 70px;
     left: 80px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 3px lightgray;
 }
 
