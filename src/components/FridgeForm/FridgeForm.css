@@ -1,0 +1,32 @@
+.form-container{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 3px lightgray;
+    border-radius: 40px;
+}
+
+.form-title{
+    position: relative;
+    top: 30px;
+}
+
+.form-content{
+    display: grid;
+    justify-content: center;
+}
+
+.form-information input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 4px;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  
+  
