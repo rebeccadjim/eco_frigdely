@@ -14,7 +14,7 @@ a{
     flex-wrap: wrap;
     
     margin: 0 auto;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     height: 100px;
     max-width: 1280px;
     background-color:  rgb(216, 253, 249);
@@ -125,14 +125,14 @@ a{
 
 .nav-bar-visible{
     position: absolute;
-    right: 17%;
-    top: 13%;
+    right: 50px;
+    top: 75px;
 
     background: none;
     border: none;
     cursor: pointer;
 
-    margin: auto -35px;
+    margin: auto -45px;
     background-color: rgb(0, 0, 0);
     border: 2px solid rgb(255, 255, 255);
     padding: 0 13px;
@@ -140,6 +140,7 @@ a{
     height: 50px;
     width: 50px;
 }
+
 
 .nav-bar-visible span{
     display:block;
@@ -152,16 +153,17 @@ a{
     transition: 0.4s;
 }
 
+.nav-bar-visible-out{
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
 
 .nav-bar-visible:hover span{
     margin: auto;
 }
 
-.nav-bar-visible-out{
-    position: absolute;
-    right: 17%;
-    top: 5%;
-}
+
 .nav-bar-visible-in:hover span:nth-child(1){
     width: 20px;
     transform: translate(-6px,0px) rotate(-45deg);

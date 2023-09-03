@@ -19,13 +19,20 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <NavBar/>
+        <div className='app-components'>
+          <div className='navbar'>
+            <NavBar />
+          </div>
+          <div className='sidebar'>
+            <SideBar />
+          </div>
+        </div>
         <div className='content'>
-          <SideBar/>
           <Routes>
             <Route path="/homepage" element={<HomePage />} />
             <Route path="/user" element={<User />} />
             <Route path="/fridge" element={<Fridge />} />
+            <Route path="map" element=""></Route>
           </Routes>
         </div>
       </Router >

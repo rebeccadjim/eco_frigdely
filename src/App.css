@@ -43,6 +43,10 @@
   }
 }
 
-.content{
-  
+.app-components{
+  position: relative;
+}
+
+.sidebar{
+  position: fixed;
 }

@@ -2,31 +2,106 @@
     display: grid;
     background-color: rgb(255, 255, 255);
     width: 300px;
-    height: 500px;
+    height: 550px;
     box-shadow: 5px 5px 3px lightgray;
     border-radius: 40px;
 }
 
 .form-title{
+    display: grid;
+    place-content: center;
     position: relative;
-    top: 30px;
+    background-image: linear-gradient(135deg, #ffd324 5%, #ec6d23);
+    border-radius: 40px 40px 0px 0px;
+    font-family: "Codec cold",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color:#ffffff;
+    height: 90px;
 }
 
 .form-content{
     display: grid;
     justify-content: center;
+    align-items: center;
+    opacity: 50%;
 }
 
 .form-information input[type="text"] {
+    display: grid;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
     font-size: 14px;
-    padding: 5px;
-    margin-top: 4px;
     background-color: transparent;
     outline: none;
   }
   
+.form-button-area{
+    display: flex;
+    background-image: linear-gradient(135deg, #ec6d23 40%, #ffd324);
+    border-radius: 0px 0px 40px 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-button{
+  align-items: center;
+  background-color: rgb(252, 230, 200);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.form-button:active {
+  outline: 0;
+}
+
+.form-button:hover {
+  outline: 0;
+}
+
+.form-button span {
+  transition: all 200ms;
+}
+
+.form-button:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .form-button {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .form-button span {
+    line-height: 50px;
+  }
+}
+
   
   
