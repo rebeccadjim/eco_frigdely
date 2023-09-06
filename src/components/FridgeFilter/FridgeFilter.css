@@ -1,8 +1,9 @@
 .filter-container {
     display: grid;
     background-color: rgb(255, 255, 255);
-    width: 300px;
-    height: 550px;
+    width: 270px;
+    margin-left: 30px;
+    height: 75vh;
     box-shadow: 5px 5px 3px lightgray;
     border-radius: 40px;
 }
@@ -17,7 +18,7 @@
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
-    height: 90px;
+    height: 80px;
 }
 
 .filter-content {
@@ -29,7 +30,7 @@
     text-align: center;
     position: relative;
     display: flex;
-    bottom: 160px;
+    bottom: 100px;
     width: 200px;
     height: 20px;
     font-size: 15px;
@@ -44,7 +45,7 @@
 .search-details{
     display: grid;
     position: relative;
-    bottom: 170px;
+    bottom: 110px;
 }
 
 select {
@@ -59,7 +60,7 @@ select {
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-.datepicker-container{
+.date-container{
     text-align: center;
     border: 1px solid #ccc;
     row-gap: 10px;

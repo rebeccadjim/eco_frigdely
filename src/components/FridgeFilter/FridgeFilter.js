@@ -54,9 +54,7 @@ function FridgeFilter() {
                         <option value="10-20">10-20€</option>
                         <option value="+20">+20€</option>
                     </select>
-                    <div className='datepicker-container'>
-                        <DatePicker placeholder= "Best before" selected={alimentDate} onChange={date => setAlimentDate(date)} />
-                    </div>
+                    <input className='date-container' type="date" placeholder="Best before" selected={alimentDate} onChange={date => setAlimentDate(date)} />
                 </div>
             </div>
         </div>

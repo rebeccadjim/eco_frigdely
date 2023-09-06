@@ -10,6 +10,7 @@ import Wallet from './pages/Wallet';
 import User from './pages/User';
 import AboutUs from './pages/AboutUs';
 import Orders from './pages/Cart';
+import Register from './pages/Register';
 import SideBar from './components/SideBar/SideBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -23,17 +24,21 @@ function App() {
           <div className='navbar'>
             <NavBar />
           </div>
-          <div className='sidebar'>
-            <SideBar />
+          <div className='web-page'>
+            <div className='sidebar'>
+              {/* <SideBar /> */}
+            </div>
           </div>
-        </div>
-        <div className='content'>
-          <Routes>
-            <Route path="/homepage" element={<HomePage />} />
-            <Route path="/user" element={<User />} />
-            <Route path="/fridge" element={<Fridge />} />
-            <Route path="map" element=""></Route>
-          </Routes>
+          <div className='content'>
+            <Routes>
+              <Route path="/register" element={<Register/>}/>
+              <Route path="/homepage" element={<HomePage />} />
+              <Route path="/user" element={<User />} />
+              <Route path="/fridge" element={<Fridge />} />
+              <Route path="map" element="" />
+              <Route path="/messages" element={<Messages />}></Route>
+            </Routes>
+          </div>
         </div>
       </Router >
     </div>

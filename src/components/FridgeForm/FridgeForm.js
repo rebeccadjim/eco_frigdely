@@ -1,10 +1,10 @@
-import {useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import './FridgeForm.css';
-import { useRef} from "react";
+import { useRef } from "react";
 import { useState } from "react";
 
-function FridgeForm () {
-    
+function FridgeForm() {
+
     // const[alimentName,setAlimentName]=useState([])
     // const[alimentQuantity,setAlimentQuantity]=useState([])
     // const[alimentPrice,setAlimentPrice]=useState([])
@@ -28,33 +28,13 @@ function FridgeForm () {
         <div className="form-container">
             <div className="form-title">Add an aliment</div>
             <div className="form-content">
-                <div className="form-information">
-                    <span>Name</span>
-                    <div>
-                        <input type='text' id='name' value='' />
-                    </div>
-                    <br />
-                    <span>Quantity</span>
-                    <div>
-                        <input type='text' id='name' value='' />
-                    </div>
-                    <br />
-                    <span>Expiration date</span>
-                    <div>
-                        <input type='text' id='name' value='' />
-                    </div>
-                    <br />
-                    <span>Price</span>
-                    <div>
-                        <input type='text' id='name' value='' />
-                    </div>
-                    <br />
-                    <span>Image URL</span>
-                    <div>
-                        <input type='text' id='name' value='' />
-                    </div>
-                    <br />
-                </div>
+                <form className="form-information">
+                    <input className="information-form" type='text' placeholder="Name" />
+                    <input className="information-form" type='number' placeholder="Quantity" />
+                    <input className="information-form" type='date' placeholder="Expiration date" />
+                    <input className="information-form" type='number' placeholder="Price" />
+                    <input className="information-form" type='file' />
+                </form>
             </div>
             <div className="form-button-area">
                 <button className="form-button" type="submit">Add !</button>

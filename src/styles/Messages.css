@@ -1,0 +1,85 @@
+.message-page-container{
+    background-color: rgb(240, 240, 240);
+}
+
+.message-page-content{
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-list-container{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height:510px;
+    text-align: center;
+}
+
+.friends-list-header{
+    width: 100%;
+    height: 60px;
+    background: rgb(230, 230, 230);
+}
+
+.friends-image{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    right: 110px;
+    bottom: 15px;
+}
+
+.message-title{
+    position: relative;
+    bottom: 85px;
+    opacity: 50%;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search-friend-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+}
+
+.search-friend-bar{
+    text-align: center;
+    position: relative;
+    top: 5px;
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+}
+
+.search-icon{
+    opacity: 60%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.friends-chats-container{
+    position: relative;
+    top: 15px;
+    background-color: rgb(255, 255, 255);
+    border-top: rgb(240, 240, 240) solid;
+    height: calc(100%-100px);
+    width: 100%;
+}
+
+.message-container{
+    background: linear-gradient(135deg, #3f87a6, #ebf8e1, #f69d3c);
+    width: 900px;
+    height:510px;
+    text-align: center;
+}
+

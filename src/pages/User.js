@@ -53,48 +53,50 @@ function User() {
 
     return (
         <div className="user-page-container">
-            <div className="user-page-deco">
-                <p className="user-profile">User profile</p>
-                <div className="trait"><hr /></div>
-            </div>
-            <div className="user-info-container">
-                <div className="profile">
-                    <img className="profile-pic" src={userInfo.picture} alt=""></img>
-                    <p className="name-under-pic"> {userInfo.firstname}</p>
-                    <p className="name-under-pic"> {userInfo.lastname}</p>
-                    <p className="name-under-pic"> {userInfo.age + " ans"}</p>
+            <div className="user-page-content">
+                <div className="user-page-deco">
+                    <p className="user-profile">User profile</p>
+                    <div className="trait"><hr /></div>
                 </div>
-                <div className="personal-infos">
-                    <div className="personal-infos-word">Personal information</div>
-                    <div className="left-info">
-                        <p className="infos-left-title">Department</p>
-                        <p className="infos-left">{userInfo.department}</p>
-                        <p className="infos-left-title">Year</p>
-                        <p className="infos-left">{userInfo.year}</p>
-                        <p className="infos-left-title">Building</p>
-                        <p className="infos-left">{userInfo.building}</p>
+                <div className="user-info-container">
+                    <div className="profile">
+                        <img className="profile-pic" src={userInfo.picture} alt=""></img>
+                        <p className="name-under-pic"> {userInfo.firstname}</p>
+                        <p className="name-under-pic"> {userInfo.lastname}</p>
+                        <p className="name-under-pic"> {userInfo.age + " ans"}</p>
                     </div>
+                    <div className="personal-infos">
+                        <div className="personal-infos-word">Personal information</div>
+                        <div className="left-info">
+                            <p className="infos-left-title">Department</p>
+                            <p className="infos-left">{userInfo.department}</p>
+                            <p className="infos-left-title">Year</p>
+                            <p className="infos-left">{userInfo.year}</p>
+                            <p className="infos-left-title">Building</p>
+                            <p className="infos-left">{userInfo.building}</p>
+                        </div>
 
-                    <div className="right-info">
-                        <p className="infos-right-title">E-mail</p>
-                        <p className="infos-right">{userInfo.email}</p>
-                        <p className="infos-right-title">Phone number</p>
-                        <p className="infos-right">{userInfo.phoneNumber}</p>
-                        <p className="infos-right-title">Address</p>
-                        <p className="infos-right">{userInfo.address}</p>
+                        <div className="right-info">
+                            <p className="infos-right-title">E-mail</p>
+                            <p className="infos-right">{userInfo.email}</p>
+                            <p className="infos-right-title">Phone number</p>
+                            <p className="infos-right">{userInfo.phoneNumber}</p>
+                            <p className="infos-right-title">Address</p>
+                            <p className="infos-right">{userInfo.address}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="user-data-container">
-                {bottomItems.map(({ text, icon, value, unit, linking }) => (
-                    <a href={"/" + linking} className="infos-bottom" >
-                        <img className="bottom-images" src={icon} alt="" srcSet="" />
-                        <p className="values">{value + unit}</p>
-                        <p>{text}</p>
-                    </a>))}
-            </div>
-            <div className="notifications-container">
-                <p className="notifications-word">Notifications</p>
+                <div className="user-data-container">
+                    {bottomItems.map(({ text, icon, value, unit, linking }) => (
+                        <a href={"/" + linking} className="infos-bottom" >
+                            <img className="bottom-images" src={icon} alt="" srcSet="" />
+                            <p className="values">{value + unit}</p>
+                            <p>{text}</p>
+                        </a>))}
+                </div>
+                <div className="notifications-container">
+                    <p className="notifications-word">Notifications</p>
+                </div>
             </div>
         </div>
     );
