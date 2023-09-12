@@ -103,6 +103,9 @@
 }
 
 .menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     height: 57px;
     width:15em;
     display: flex;
@@ -115,9 +118,10 @@
 }
 
 .menu-item-NX{
-    margin: auto 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width:  4.5em;
-    padding: auto ;
 }
 
 .menu-item:hover{

@@ -14,6 +14,7 @@ import Register from './pages/Register';
 import SideBar from './components/SideBar/SideBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Login from './pages/Login';
 
 
 function App() {
@@ -26,12 +27,13 @@ function App() {
           </div>
           <div className='web-page'>
             <div className='sidebar'>
-              {/* <SideBar /> */}
+              <SideBar />
             </div>
           </div>
           <div className='content'>
             <Routes>
               <Route path="/register" element={<Register/>}/>
+              <Route path="/login" element={<Login/>}/>
               <Route path="/homepage" element={<HomePage />} />
               <Route path="/user" element={<User />} />
               <Route path="/fridge" element={<Fridge />} />

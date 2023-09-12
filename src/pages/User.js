@@ -85,6 +85,9 @@ function User() {
                             <p className="infos-right">{userInfo.address}</p>
                         </div>
                     </div>
+                    <div className="notifications-container">
+                    <p className="notifications-word">Notifications</p>
+                </div>
                 </div>
                 <div className="user-data-container">
                     {bottomItems.map(({ text, icon, value, unit, linking }) => (
@@ -93,9 +96,6 @@ function User() {
                             <p className="values">{value + unit}</p>
                             <p>{text}</p>
                         </a>))}
-                </div>
-                <div className="notifications-container">
-                    <p className="notifications-word">Notifications</p>
                 </div>
             </div>
         </div>

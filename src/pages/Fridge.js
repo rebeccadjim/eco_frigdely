@@ -4,18 +4,16 @@ import '../styles/Fridge.css';
 import FridgeForm from "../components/FridgeForm/FridgeForm";
 import FridgeFilter from "../components/FridgeFilter/FridgeFilter";
 
-function Fridge({filters}) {
-
-    
+function Fridge({ filters }) {
     return (
-        <div className="container">
+        <div className="fridge-page-container">
             <div className="fridge-page-deco">
                 <p className="your-fridge">Your fridge</p>
-                <div className="trait"><hr /></div>
+                <div className="fridge-trait"><hr /></div>
             </div>
-            <div className="fridge-page-container">
+            <div className="fridge-page-content">
                 <div className="search-aliment-fridge">
-                    <FridgeFilter/>
+                    <FridgeFilter />
                 </div>
                 <div className="aliment-content">
                     {fridge.map(({ name, quantity, unit, expiration_date, price, price_unit, picture }) => (
@@ -40,7 +38,7 @@ function Fridge({filters}) {
                         </div>))}
                 </div>
                 <div className="fridge-form">
-                <FridgeForm></FridgeForm>
+                    <FridgeForm></FridgeForm>
                 </div>
                 {/* <div className="vertical-line-left"></div>
                 <div className="vertical-line-right"></div> */}

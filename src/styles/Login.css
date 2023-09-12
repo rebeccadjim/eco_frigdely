@@ -1,4 +1,4 @@
-.register-form-container {
+.login-form-container {
     background-image: linear-gradient(120deg, rgb(60, 155, 158), rgb(255, 255, 255));
     height: 100vh;
     display: flex;
@@ -6,23 +6,25 @@
     justify-content: center;
 }
 
-.register-form-content {
-    height: 400px;
+.login-form-content {
+    height: 300px;
     width: 400px;
     background-color: white;
     border-radius: 20px;
 }
 
-.register-form{
+.login-form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
     top: 80px;
     display: flex;
+    gap: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.register-form-form{
+.login-form-form{
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -31,7 +33,7 @@
     gap: 25px;
 }
 
-.register-input {
+.login-input {
     text-align: center;
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -41,29 +43,7 @@
     outline: none;
 }
 
-input[type="file"] {
-    display: none;
-}
-
-.register-image-input{
-    opacity: 60%;
-    display: flex;
-    width:200px;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.register-image-input img{
-    width:40px;
-}
-
-.register-image-input span{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.register-title{
+.login-title{
     position: relative;
     top: 40px;
     font-size: larger;
@@ -74,14 +54,19 @@ input[type="file"] {
     text-shadow: 0 1px 1px #fff;
 }
 
-.register-button {
+.login-forgot-password, .login-register-link{
+    opacity: 80%;
+    color: #673ab7;
+    font-size: small;
+}
+
+.login-button {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    float: left;
-    width: 200px;
+    width: 100%;
     height: 60px;
-    top: 105px;
+    top: 100px;
     border: none;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -89,7 +74,7 @@ input[type="file"] {
     -webkit-transition: .5s;
     transition: .5s;
     background: #673ab7;
-    border-radius: 0 0 0 20px;
+    border-radius: 0 0 20px 20px;
 
     span {
         position: absolute;
@@ -109,37 +94,3 @@ input[type="file"] {
     }
 }
 
-.register-login-button{
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    width: 200px;
-    height: 60px;
-    top: 105px;
-    border: none;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background: #ff831e;
-    border-radius: 0 0 20px 0;
-
-    span {
-        position: absolute;
-        display: block;
-        margin: -10px 20%;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        -webkit-transition: .5s;
-        transition: .5s;
-    }
-
-    &:hover {
-        span {
-            -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-        }
-    }
-}

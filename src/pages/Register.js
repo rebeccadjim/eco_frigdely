@@ -1,6 +1,7 @@
 import { userFile } from '../data/userFile';
 import { useParams } from 'react-router-dom';
 import '../styles/Register.css';
+import image_input from './icons/image-input.svg';
 
 const Register = () => {
     return (
@@ -13,12 +14,20 @@ const Register = () => {
                         <input className='register-input' type='e-mail' placeholder='Type your e-mail' />
                         <input className='register-input' type='password' placeholder='Type your password' />
                         <input className='register-input' type='password' placeholder='Confirm your password' />
-                        <input className='register-input' type='file' />
+                        <input className='register-input' type='file' id='file' />
+                        <label className='register-image-input' htmlFor='file'>
+                            <img src={image_input} alt=''></img>
+                            <span>Add an avatar</span>
+                        </label>
                     </form>
                 </div>
                 <div>
-                    <button className='register-button'>Sign up</button>
-                    <button className='register-login-button'>Already have an account ? Login </button>
+                    <a href='/homepage'>
+                        <button className='register-button'>Sign up</button>
+                    </a>
+                    <a href='/login'>
+                        <button className='register-login-button'>Already have an account ? Login </button>
+                    </a>
                 </div>
             </div>
         </div>

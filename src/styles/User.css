@@ -1,16 +1,17 @@
 .user-page-container{
    background-color: rgb(239, 239, 239);
+   height: 100vh;
 }
 .user-page-deco{
-    position: relative;
-    height: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .user-profile{
     position: relative;
     font-size: larger;
     opacity: 30%;
-    right: 40%;
-    top: 15px;
+    right: 37%;
+    top: 10px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -18,16 +19,19 @@
     position: relative;
     width: 80%;
     left: 20%;
-    top: -15px;
+    top: -28px;
     opacity: 30%;
 }
 
+.user-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .profile{
-    position: absolute;
+    position: relative;
     width: 210px;
     height: 300px;
-    top: 140px;
-    left: 80px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 3px lightgray;
 }
@@ -52,8 +56,6 @@
     background-color: rgb(255, 255, 255);
     width: 550px;
     height: 300px;
-    top: 20px;
-    left: 355px;
     box-shadow: 5px 5px 3px lightgray;
 }
 
@@ -86,11 +88,11 @@
     position: relative;
     display: flex;
     background-color: rgb(255, 255, 255);
-    width: 1100px;
+    width: 1170px;
     height: 100px;
     box-shadow: 5px 5px 3px lightgray;
     bottom: -50px;
-    left: 80px;
+    left: 46px;
 }
 
 .infos-bottom{
@@ -114,14 +116,11 @@
     background-color: rgb(255, 255, 255);
     width: 210px;
     height: 300px;
-    left: 970px;
-    bottom: 395px;
     box-shadow: 5px 5px 3px lightgray;
 }
 
 .notifications-word{
     position: relative;
     text-align: center;
-    top: 15px;
     opacity: 30%;
 }
