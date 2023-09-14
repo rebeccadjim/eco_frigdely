@@ -1,7 +1,90 @@
 
 .message-container{
     background: linear-gradient(135deg, #3f87a6, #ebf8e1, #f69d3c);
-    width: 900px;
+    width: 650px;
     height:510px;
     text-align: center;
+}
+
+.message-header-container{
+    width: 100%;
+    background-color: #ffffff;
+    height: 60px;
+}
+
+.message-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.friend-header-infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.friend-profile-pic-msg{
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    border: 1px rgb(217, 217, 217) solid;
+}
+
+.user-message-infos{
+    cursor: pointer;
+    opacity: 60%;
+}
+.user-message-infos-image{
+    width: 30px;
+    height: 30px;
+}
+
+.message-display-container{
+    height: 390px;
+    overflow-y: scroll;
+}
+
+.message-type-area-container{
+    position: absolute;
+    width: 650px;
+    top: 450px;
+}
+
+.message-type-area{
+    border: 1px rgb(235, 235, 235) solid;
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    height: 60px;
+}
+
+.message-type-container{
+    position: relative;
+    width: 70%;
+    height: 100%;
+
+    font-size: 15px;
+    padding-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.message-icons{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.message-image-input-img, .sent-icon-image{
+    width:30px;
+    opacity: 60%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }

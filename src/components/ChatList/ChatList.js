@@ -20,7 +20,76 @@ const ChatList = () => {
                     <input className='search-friend-bar' type="search" placeholder="Search a conversation" />
                 </div>
                 <div className='friends-chats-container'>
-
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
+                    <div className='friend-chat'>
+                        <img src='https://tse4.mm.bing.net/th?id=OIP.KE_4sXBufUHGVvJTRXe8FQAAAA&pid=Api' alt=''/>
+                        <div className='friend-info'>
+                            <span>John</span>
+                            <p> Hi !</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

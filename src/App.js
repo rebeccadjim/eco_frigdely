@@ -24,8 +24,8 @@ function App() {
         <div className='app-content'>
           <div className='web-page'>
             <div className='components'>
-              <NavBar/>
-              <SideBar />
+              {/* <NavBar/>
+              <SideBar /> */}
             </div>
           </div>
           <div className='content'>

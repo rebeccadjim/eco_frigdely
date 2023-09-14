@@ -1,3 +1,9 @@
+@mixin laptop{
+    @media screen and (max-width:600px){
+        @content
+    }
+}
+
 .message-page-container{
     background-color: rgb(240, 240, 240);
     height: 95h;
@@ -8,4 +14,15 @@
 .message-page-content{
     display: flex;
     justify-content: center;
+    @include laptop{
+        display:none;
+    }
+}
+
+.chat-list{
+    flex: 1;
+}
+
+.message-box{
+    flex: 2;
 }
