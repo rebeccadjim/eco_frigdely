@@ -3,9 +3,10 @@ a{
 }
 
 .banner-container{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: grey;
-    border-bottom: 3px solid rgb(245, 245, 245);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 1280px;
 }
 .banner-content{
     display: flex;
@@ -17,7 +18,7 @@ a{
     /* padding: 0 30px; */
     height: 100px;
     max-width: 1280px;
-    background-color:  rgb(216, 253, 249);
+    background-color:  rgb(255, 255, 255);
 }
 
 .banner-content-NX{
@@ -25,7 +26,7 @@ a{
     padding: 0 30px;
     height: 50px;
     max-width: 1280px;
-    background-color: rgb(216, 253, 249);
+    background-color: rgb(255, 255, 255);
 }
 .search-bar-container {
     position: absolute;

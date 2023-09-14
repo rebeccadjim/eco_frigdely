@@ -21,12 +21,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div className='app-components'>
-          <div className='navbar'>
-            <NavBar />
-          </div>
+        <div className='app-content'>
           <div className='web-page'>
-            <div className='sidebar'>
+            <div className='components'>
+              <NavBar/>
               <SideBar />
             </div>
           </div>

@@ -1,12 +1,14 @@
 .fridge-page-container {
     background-color: rgb(239, 239, 239);
     height: 100vh;
+    overflow: hidden;
 }
 
 .fridge-page-content {
     position: relative;
     top: 20px;
     display: flex;
+    gap: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

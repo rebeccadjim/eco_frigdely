@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import '../styles/Fridge.css';
 import FridgeForm from "../components/FridgeForm/FridgeForm";
 import FridgeFilter from "../components/FridgeFilter/FridgeFilter";
+import FridegAliment from "../components/FridgeAliment/FridgeAliment";
 
 function Fridge({ filters }) {
     return (
@@ -15,33 +16,12 @@ function Fridge({ filters }) {
                 <div className="search-aliment-fridge">
                     <FridgeFilter />
                 </div>
-                <div className="aliment-content">
-                    {fridge.map(({ name, quantity, unit, expiration_date, price, price_unit, picture }) => (
-                        <div className="aliment">
-                            <div className="aliment-image-area">
-                                <img className="aliment-image" src={picture} alt="" />
-                            </div>
-                            <div className="aliment-text-area">
-                                <p className="aliment-text">
-                                    {name}
-                                    <br />
-                                    <br />
-                                    Quantité : {quantity} {unit}
-                                    <br />
-                                    <br />
-                                    Date d'expiration : {expiration_date}
-                                    <br />
-                                    <br />
-                                    Prix : {price}{price_unit}
-                                </p>
-                            </div>
-                        </div>))}
+                <div className="aliments-content">
+                    <FridegAliment/>
                 </div>
                 <div className="fridge-form">
-                    <FridgeForm></FridgeForm>
+                    <FridgeForm/>
                 </div>
-                {/* <div className="vertical-line-left"></div>
-                <div className="vertical-line-right"></div> */}
             </div>
         </div>
     );
