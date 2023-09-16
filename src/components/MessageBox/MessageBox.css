@@ -49,9 +49,8 @@
 }
 
 .message-type-area-container{
-    position: absolute;
+    position: relative;
     width: 650px;
-    top: 450px;
 }
 
 .message-type-area{

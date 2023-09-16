@@ -9,7 +9,7 @@ import Map from './pages/Map';
 import Wallet from './pages/Wallet';
 import User from './pages/User';
 import AboutUs from './pages/AboutUs';
-import Orders from './pages/Cart';
+import Cart from './pages/Cart';
 import Register from './pages/Register';
 import SideBar from './components/SideBar/SideBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -24,17 +24,18 @@ function App() {
         <div className='app-content'>
           <div className='web-page'>
             <div className='components'>
-              {/* <NavBar/>
-              <SideBar /> */}
+              <NavBar />
             </div>
           </div>
           <div className='content'>
+            <div className='sideBar'><SideBar /></div>
             <Routes>
-              <Route path="/register" element={<Register/>}/>
-              <Route path="/login" element={<Login/>}/>
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/homepage" element={<HomePage />} />
               <Route path="/user" element={<User />} />
               <Route path="/fridge" element={<Fridge />} />
+              <Route path="/cart" element={<Cart />} />
               <Route path="map" element="" />
               <Route path="/messages" element={<Messages />}></Route>
             </Routes>

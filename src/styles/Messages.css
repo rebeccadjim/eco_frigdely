@@ -1,12 +1,13 @@
-@mixin laptop{
+/* @mixin laptop{
     @media screen and (max-width:600px){
         @content
     }
-}
+} */
 
 .message-page-container{
     background-color: rgb(240, 240, 240);
-    height: 95h;
+    width: 100vw;
+    height: 90vh;
     display: flex;
     justify-content: center;
 }

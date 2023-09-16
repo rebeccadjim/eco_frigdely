@@ -1,0 +1,76 @@
+.cart-filter-container {
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  margin-left: 30px;
+  height: 65vh;
+  box-shadow: 5px 5px 3px lightgray;
+  border-radius: 5px;
+}
+
+.cart-filter-title {
+  display: grid;
+  place-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #3f87a6, #ebf8e1, #f69d3c);
+  border-radius: 5px 5px 0px 0px;
+  font-family: "Codec cold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: #000000;
+  color: #ffffff;
+  height: 80px;
+}
+
+.cart-filter-content {
+  display: grid;
+  justify-content: center;
+}
+
+.cart-search-box {
+  opacity: 50%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  bottom: 50px;
+  width: 200px;
+  height: 20px;
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  outline: none;
+  justify-content: center;
+}
+
+.cart-search-details{
+  display: grid;
+  position: relative;
+  bottom: 60px;
+  gap: 20px;
+}
+
+select {
+  text-align: center;
+  border: 1px solid #ccc;
+  row-gap: 10px;
+  height: 30px;
+  width: 200px;
+  opacity:50%;
+  border-radius: 3px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.cart-date-container{
+  text-align: center;
+  border: 1px solid #ccc;
+  row-gap: 10px;
+  height: 30px;
+  width: 200px;
+  opacity: 60%;
+  border-radius: 3px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
