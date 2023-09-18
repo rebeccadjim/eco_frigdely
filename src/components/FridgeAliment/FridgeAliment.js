@@ -8,7 +8,7 @@ const FridegAliment = () => {
             <div className="aliment-content">
                 {fridge.map(({ name, quantity, unit, expiration_date, price, price_unit, picture }) => (
                     <div className="aliment">
-                        <div className="aliment-image-area">a
+                        <div className="aliment-image-area">
                             <img className="aliment-image" src={picture} alt="" />
                         </div>
                         <div className="aliment-text-area">
